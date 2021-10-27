@@ -81,7 +81,7 @@ local usi = game:GetService("UserInputService")
 local uitoggled = false
 usi.InputBegan:Connect(
 	function(io, p)
-		if io.KeyCode == Enum.KeyCode.RightShift then
+		if io.KeyCode == _G.Key then
 			if uitoggled == false then
 				helioslib.Enabled = false
 				uitoggled = true
